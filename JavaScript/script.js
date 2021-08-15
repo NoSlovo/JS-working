@@ -1,18 +1,16 @@
-// Пример с switch
+"use strict";
+//Переписать функцию indexOf чтобы она возвращала значения в конце 
+ // indexOf - вычесляет значения в массиве.
 
-let i  = 0;
+ function indexOf(arr, value){
+     for(let i in arr){
+         if(arr[i] === value){
+             return i
+         }
 
-switch(i){
-    case 0:
-        console.log('zero');
-}
+         }        
+        }
 
-
-// пример с for 
-
-let arr = ["ноль","один","два","три","четыре","пять","шесть","семь","восемь","девять"];
-
-for(let i = 0; i <=9 ;i++){
-    console.log(arr[i]);
-}
+ let massiv = indexOf([0,1,2,3,4,5,6,7],7);
+ console.log(massiv);
 
